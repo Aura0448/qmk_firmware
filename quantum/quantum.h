@@ -154,6 +154,12 @@ extern layer_state_t layer_state;
 #    include "process_joystick.h"
 #endif
 
+#ifdef SIGNALRGB_SUPPORT_ENABLE
+#    ifndef VIA_ENABLE
+#    include "signalrgb.h"
+#    endif
+#endif
+
 #ifdef GRAVE_ESC_ENABLE
 #    include "process_grave_esc.h"
 #endif
